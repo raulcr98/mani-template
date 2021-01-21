@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tienda Online</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://tailwindcomponents.com/css/component.ecommerce-product.css" rel="stylesheet">
+    <style>
+        .product {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center" style="background: #edf2f7;">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+<div class="bg-white">
+    <header>
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="hidden w-full text-gray-600 md:flex md:items-center">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z" fill="currentColor" />
+                    </svg>
+                    <span class="mx-1 text-sm">CU</span>
+                </div>
+                <div class="w-full text-gray-700 md:text-center text-2xl font-semibold">
+                    Tienda Online
+                </div>
+                <div class="flex items-center justify-end w-full">
+                    <a @click="cartOpen = !cartOpen" class="text-gray-600 focus:outline-none mx-4 sm:mx-0">
+                        
+                    </a>
+
+                    <div class="flex sm:hidden">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="my-8">
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:items-center">
+                <div class="w-full h-64 md:w-1/2 lg:h-96">
+                    <img class="h-full w-full rounded-md object-cover max-w-lg mx-auto" src="assets/mani4.jpg">
+                </div>
+                <div class="w-full max-w-lg mx-auto mt-5 md:ml-8 md:mt-0 md:w-1/2">
+                    <h3 class="text-gray-700 uppercase text-lg">Mani Molido</h3>
+                    <span class="text-gray-500 mt-3">$2</span>
+                    <hr class="my-3">
+                    <div class="flex items-center mt-6">
+                        <a href="" data-toggle="modal" data-uid=0e95df0e5b5811eb class="px-8 py-2 bg-indigo-600 text-white text-sm font-medium rounded hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 blockoPayBtn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-gray-600 text-2xl font-medium" align="center">Otros Productos</h3>
+                <div class="product grid gap-6 grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                        <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('assets/mani1.jpg'); background-position: cente center;">
+                            <a href="" data-toggle="modal" data-uid=0e95df0e5b5811eb class="blockoPayBtn p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                                <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="px-5 py-3">
+                            <h3 class="text-gray-700 uppercase">Producto 2</h3>
+                            <span class="text-gray-500 mt-2">$1</span>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                        <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('assets/mani2.jpeg')">
+                            <a href="" data-toggle="modal" data-uid=0e95df0e5b5811eb class="blockoPayBtn p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                                <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="px-5 py-3">
+                            <h3 class="text-gray-700 uppercase">Producto 3</h3>
+                            <span class="text-gray-500 mt-2">$3</span>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                        <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('assets/mani3.jpg')">
+                            <a href="" data-toggle="modal" data-uid=0e95df0e5b5811eb class="blockoPayBtn p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                                <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="px-5 py-3">
+                            <h3 class="text-gray-700 uppercase">Producto 4</h3>
+                            <span class="text-gray-500 mt-2">$1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-500 hover:text-gray-400">Tienda Online</a>
+            <p class="py-2 text-gray-500 sm:py-0">Derechos reservados</p>
+        </div>
+    </footer>
+</div>
+<script src="https://www.blockonomics.co/js/pay_button.js"></script>
+</body>
+</html>
